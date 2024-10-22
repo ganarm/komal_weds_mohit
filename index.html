@@ -1,0 +1,425 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 4px solid #3498db;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .invitation {
+            display: none;
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .invitation h1, .invitation h2, .invitation p {
+            text-align: center;
+            margin: 0 0 10px;
+        }
+
+        .invitation h1 {
+            font-size: 24px;
+            color: #e74c3c;
+        }
+
+        .invitation h2 {
+            font-size: 20px;
+            color: #2c3e50;
+        }
+
+        .invitation p {
+            font-size: 16px;
+            color: #34495e;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+    <div class="invitation" id="invitation">
+        <h1>|| कुळदेवी पेडकाई माता प्रसन्न ||</h1>
+        <h1>|| श्री गणेशाय नमः ||</h1>
+        <p>चि.सौ.कां. कोमल</p>
+        <p>ग.भा. बेबाबाई व कै. राजेंद्र झामराव महाजन यांची तृतीय कन्या</p>
+        <p>मु. पो. करंजी बु., ता. पारोळा, जि. जळगाव</p>
+        <p>चि. मोहित</p>
+        <p>सौ. माधवी व श्री. राजेंद्र रामचंद्र शिंदे यांचे चिरंजीव, मु. पो. काठे गल्ली, नाशिक</p>
+        <h2>यांचा शुभविवाह सोहळा</h2>
+        <p>शनिवार दि.२३/११/२०२४ रोजी सायं ७ वा. या शुभ गोरज मुहूर्तावर होईल...</p>
+        <h2>हळद समारंभ</h2>
+        <p>शुक्रवार दि.२२/११/२०२४ सायं ६ वा ३० मि. विवाहस्थळी</p>
+        <h2>विवाहस्थळ</h2>
+        <p>शहनाई लॉन्स, शंकर नगर, टाकळी रोड, द्वारका, नाशिक</p>
+        <h2>प्रेषक</h2>
+        <p>श्री. हिरेन दिनेश महाजन</p>
+        <p>श्री. शुभम ज्ञानेश्र्वर मोटकरी</p>
+        <h2>निमंत्रक</h2>
+        <p>चि. गणेश राजेंद्र माळी (महाजन)</p>
+        <p>ग. भा. बेबाबाई राजेंद्र महाजन</p>
+        <p>श्री. दशरथ माणिक चव्हाण</p>
+        <p>श्री. जयवंत दशरथ चव्हाण</p>
+        <p>श्री. खंडू दशरथ चव्हाण</p>
+        <p>समस्त महाजन (बोरसे) परिवार</p>
+        <h2>आमच्या मावशी च्या लग्नाला यायचं हा....</h2>
+        <p>क्रिष्णवी, युविक, वेदिका, वेद</p>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('invitation').style.display = 'block';
+            }, 2000); // Adjust the timeout duration if needed
+        });
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Kaushan Script', cursive;
+            background-color: #8E2157;
+            color: white;
+            height: 100%;
+        }
+
+        #loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #8E2157;
+        }
+
+        .spinner {
+            border: 4px solid #8E2157;
+            border-radius: 50%;
+            border-top: 4px solid white;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .invitation-container {
+            display: none;
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            border: 4px solid white;
+            border-radius: 10px;
+            color: #8E2157;
+            margin: auto;
+            margin-top: 20px;
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+
+        .invitation-container h1, .invitation-container h2, .invitation-container p {
+            margin: 0 0 10px;
+            text-align: center;
+        }
+
+        .invitation-container h1 {
+            font-size: 28px;
+            color: #8E2157;
+        }
+
+        .invitation-container h2 {
+            font-size: 22px;
+            color: #8E2157;
+        }
+
+        .invitation-container p {
+            font-size: 18px;
+            color: #8E2157;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #e67e22;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .image img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 4px solid #8E2157;
+        }
+
+        .line {
+            height: 2px;
+            background-color: #8E2157;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+    <div class="invitation-container" id="invitation">
+        <h1>|| कुळदेवी पेडकाई माता प्रसन्न ||</h1>
+        <h1>|| श्री गणेशाय नमः ||</h1>
+        <div class="image">
+            <img src="path/to/couple_image.jpg" alt="Couple Image">
+        </div>
+        <p>चि.सौ.कां. कोमल</p>
+        <p>ग.भा. बेबाबाई व कै. राजेंद्र झामराव महाजन यांची तृतीय कन्या</p>
+        <p>मु. पो. करंजी बु., ता. पारोळा, जि. जळगाव</p>
+        <p>चि. मोहित</p>
+        <p>सौ. माधवी व श्री. राजेंद्र रामचंद्र शिंदे यांचे चिरंजीव, मु. पो. काठे गल्ली, नाशिक</p>
+        <h2>यांचा शुभविवाह सोहळा</h2>
+        <p>शनिवार दि.२३/११/२०२४ रोजी सायं ७ वा. या शुभ गोरज मुहूर्तावर होईल...</p>
+        <div class="line"></div>
+        <h2>हळद समारंभ</h2>
+        <p>शुक्रवार दि.२२/११/२०२४ सायं ६ वा ३० मि. विवाहस्थळी</p>
+        <h2>विवाहस्थळ</h2>
+        <p>शहनाई लॉन्स, शंकर नगर, टाकळी रोड, द्वारका, नाशिक</p>
+        <div class="line"></div>
+        <h2>प्रेषक</h2>
+        <p>श्री. हिरेन दिनेश महाजन</p>
+        <p>श्री. शुभम ज्ञानेश्र्वर मोटकरी</p>
+        <h2>निमंत्रक</h2>
+        <p>चि. गणेश राजेंद्र माळी (महाजन)</p>
+        <p>ग. भा. बेबाबाई राजेंद्र महाजन</p>
+        <p>श्री. दशरथ माणिक चव्हाण</p>
+        <p>श्री. जयवंत दशरथ चव्हाण</p>
+        <p>श्री. खंडू दशरथ चव्हाण</p>
+        <p>समस्त महाजन (बोरसे) परिवार</p>
+        <div class="line"></div>
+        <h2>आमच्या मावशी च्या लग्नाला यायचं हा....</h2>
+        <p>क्रिष्णवी, युविक, वेदिका, वेद</p>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('invitation').style.display = 'block';
+            }, 2000); // Adjust the timeout duration if needed
+        });
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Kaushan Script', cursive;
+            background-color: #8E2157;
+            color: white;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .invitation-container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #8E2157;
+            border: 4px solid white;
+            border-radius: 10px;
+            color: white;
+            overflow-y: auto;
+            max-height: 90vh;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .invitation-container h1, .invitation-container h2, .invitation-container p {
+            margin: 0 0 10px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+        }
+
+        .invitation-container h1.normal {
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .invitation-container h2 {
+            font-size: 22px;
+        }
+
+        .invitation-container p {
+            font-size: 18px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #e67e22;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+            /* border: 4px solid white; */
+        }
+
+        .line {
+            height: 2px;
+            background-color: white;
+            margin: 20px 0;
+        }
+
+        .marathi-text {
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            font-size: 30px; /* Increased font size */
+            color: #FFD700; /* Gold color for emphasis */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds a subtle shadow */
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-container" id="invitation">
+        <h1 class="normal animate__animated animate__fadeIn">|| कुळदेवी पेडकाई माता प्रसन्न ||</h1>
+        <h1 class="normal animate__animated animate__fadeIn">|| श्री गणेशाय नमः ||</h1>
+        <div class="image">
+            <img src="kohit.jpg" alt="Couple Image">
+        </div>
+        <p class="marathi-text animate__animated animate__fadeIn" style="font-size: 25px;">चि.सौ.कां. कोमल</p>
+        <p class="animate__animated animate__fadeIn">ग.भा. बेबाबाई व कै. राजेंद्र झामराव महाजन<br>यांची तृतीय कन्या</p>
+        <p class="animate__animated animate__fadeIn">मु. पो. करंजी बु., ता. पारोळा, जि. जळगाव</p>
+        <p class="marathi-text animate__animated animate__fadeIn" style="font-size: 25px;">चि. मोहित</p>
+        <p class="animate__animated animate__fadeIn">सौ. माधवी व श्री. राजेंद्र रामचंद्र शिंदे<br>यांचे चिरंजीव</p>
+        <p class="animate__animated animate__fadeIn">मु. पो. नाशिक</p>
+        <h2 class="animate__animated animate__fadeIn">यांचा शुभविवाह सोहळा</h2>
+        <p class="animate__animated animate__fadeIn">शनिवार दि.२३/११/२०२४ रोजी सायं ७ वा. या शुभ गोरज मुहूर्तावर होईल...</p>
+        <div class="line"></div>
+        <h2 class="animate__animated animate__fadeIn">हळद समारंभ</h2>
+        <p class="animate__animated animate__fadeIn">शुक्रवार दि.२२/११/२०२४ सायं ६ वा ३० मि. विवाहस्थळी</p>
+        <h2 class="animate__animated animate__fadeIn">विवाहस्थळ</h2>
+        <p class="animate__animated animate__fadeIn">शहनाई लॉन्स, शंकर नगर, टाकळी रोड, द्वारका, नाशिक</p>
+        <div class="line"></div>
+        <h2 class="animate__animated animate__fadeIn">प्रेषक</h2>
+        <p class="animate__animated animate__fadeIn">श्री. हिरेन दिनेश महाजन</p>
+        <p class="animate__animated animate__fadeIn">श्री. शुभम ज्ञानेश्र्वर मोटकरी</p>
+        <h2 class="animate__animated animate__fadeIn">निमंत्रक</h2>
+        <p class="animate__animated animate__fadeIn">चि. गणेश राजेंद्र माळी (महाजन)</p>
+        <p class="animate__animated animate__fadeIn">ग. भा. बेबाबाई राजेंद्र महाजन</p>
+        <p class="animate__animated animate__fadeIn">श्री. दशरथ माणिक चव्हाण</p>
+        <p class="animate__animated animate__fadeIn">श्री. जयवंत दशरथ चव्हाण</p>
+        <p class="animate__animated animate__fadeIn">श्री. खंडू दशरथ चव्हाण</p>
+        <p class="animate__animated animate__fadeIn">समस्त महाजन (बोरसे) परिवार</p>
+        <div class="line"></div>
+        <h2 class="animate__animated animate__fadeIn">आमच्या मावशी च्या लग्नाला यायचं हा....</h2>
+        <p class="animate__animated animate__fadeIn">क्रिष्णवी, युविक, वेदिका, वेद</p>
+    </div>
+
+    <!-- Background music -->
+    <audio id="background-music" loop autoplay>
+        <source src="pp.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Play background music
+        document.getElementById('background-music').play();
+
+        // Animate each element one by one
+        const elements = document.querySelectorAll('.invitation-container h1, .invitation-container h2, .invitation-container p');
+        elements.forEach((element, index) => {
+            setTimeout(() => {
+                element.style.opacity = 1;
+            }, index * 300); // Adjust timing here
+        });
+    </script>
+</body>
+</html>
